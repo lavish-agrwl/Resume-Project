@@ -2,38 +2,63 @@ body {
     background-color: #070F2B;
     color: #9290C3;
 }
+
+/*Fonts*/
+
+
+/* Header Contact Section*/
+
 .contact-info {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
+
 .contact-info>li {
     flex-grow: 1;
     font-size: large;
     color: #9290C3;
     padding: 5px;
 }
-.personal{
+
+.contact-info>li>a:visited {
+    color: #9290C3;
+
+}
+
+/*Profile Section*/
+
+.personal {
     display: flex;
     flex-wrap: wrap;
     margin-left: 10%;
 }
+
 .personal>img {
     margin: auto;
     padding: 20px;
     height: 200px;
 }
+
 .personal>p {
     flex-grow: 1;
     padding: 20px;
     font-size: 40px;
 
 }
-#education {
-    min-height: 150px;
-margin: auto 5%;
+
+/*Education Section*/
+
+.education>fieldset {
+    min-height: fit-content;
+    margin: auto 5%;
 }
-table{
+
+.education>fieldset>legend {
+    font-size: 40px;
+}
+
+.education>fieldset>table {
     display: block;
     margin: auto;
     width: 80vw;
@@ -43,4 +68,24 @@ td {
     border: 2px solid #2E236C;
     height: 40px;
     width: 100vw;
+    font-size: 20px;
+}
+
+/* Skills Section*/
+.skills>fieldset {
+    min-height: fit-content;
+    margin: auto 5%;
+}
+
+.skills>fieldset>legend {
+    font-size: 40px;
+}
+
+.skills>fieldset>ul {
+    list-style: none;
+    display: block;
+    font-size: 20px;
+    margin: auto 5%;
+    border: 2px solid #2E236C;
+    border-radius: 5px;
 }
