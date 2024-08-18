@@ -12,18 +12,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    justify-content: space-evenly;
 }
 
 .contact-info>li {
-    flex-grow: 1;
-    font-size: large;
+    font-size: 25px;
     color: #9290C3;
     padding: 5px;
 }
 
 .contact-info>li>a:visited {
     color: #9290C3;
-
 }
 
 /*Profile Section*/
@@ -32,16 +31,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-left: 10%;
+    justify-content: space-evenly;
 }
 
 .personal>img {
-    margin: auto;
+    /* margin: auto; */
     padding: 20px;
     height: 200px;
 }
 
 .personal>p {
-    flex-grow: 1;
     padding: 20px;
     font-size: 40px;
 
@@ -50,7 +49,6 @@ body {
 /*Education Section*/
 
 .education>fieldset {
-    min-height: fit-content;
     margin: auto 5%;
 }
 
@@ -59,7 +57,6 @@ body {
 }
 
 .education>fieldset>table {
-    display: block;
     margin: auto;
     width: 80vw;
 }
@@ -73,7 +70,6 @@ td {
 
 /* Skills Section*/
 .skills>fieldset {
-    min-height: fit-content;
     margin: auto 5%;
 }
 
@@ -83,7 +79,6 @@ td {
 
 .skills>fieldset>ul {
     list-style: none;
-    display: block;
     font-size: 20px;
     margin: auto 5%;
     border: 2px solid #2E236C;
