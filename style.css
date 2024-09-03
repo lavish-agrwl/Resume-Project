@@ -9,19 +9,30 @@ body {
 /* Header Contact Section*/
 
 .contact-info {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
 }
 
-.contact-info>li {
+.contact-info li {
     font-size: 25px;
     color: #9290C3;
     padding: 5px;
 }
 
-.contact-info>li>a:visited {
+.contact-info a {
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info a:visited {
     color: #9290C3;
 }
 
@@ -34,13 +45,16 @@ body {
     justify-content: space-evenly;
 }
 
-.personal>img {
+.personal img {
     /* margin: auto; */
     padding: 20px;
     height: 200px;
 }
 
-.personal>p {
+.personal img:hover {
+    scale: 1.1;
+}
+.personal p {
     padding: 20px;
     font-size: 40px;
 
@@ -48,15 +62,15 @@ body {
 
 /*Education Section*/
 
-.education>fieldset {
+.education fieldset {
     margin: auto 5%;
 }
 
-.education>fieldset>legend {
+.education legend {
     font-size: 40px;
 }
 
-.education>fieldset>table {
+.education table {
     margin: auto;
     width: 80vw;
 }
@@ -69,15 +83,15 @@ td {
 }
 
 /* Skills Section*/
-.skills>fieldset {
+.skills fieldset {
     margin: auto 5%;
 }
 
-.skills>fieldset>legend {
+.skills legend {
     font-size: 40px;
 }
 
-.skills>fieldset>ul {
+.skills ul {
     list-style: none;
     font-size: 20px;
     margin: auto 5%;
