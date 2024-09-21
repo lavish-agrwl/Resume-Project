@@ -1,100 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #070F2B;
-    color: #9290C3;
-}
-
-/*Fonts*/
-
-
-/* Header Contact Section*/
-
-.contact-info {
     width: 100%;
+    flex-direction: column;
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: space-evenly;
-    position: fixed;
-    bottom: 0;
+    align-items: center;
 }
 
-.contact-info li {
-    font-size: 25px;
-    color: #9290C3;
-    padding: 5px;
+nav {
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(169, 208, 217);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.contact-info a {
+.navButtons {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+@media (max-width: 720px) {
+    .navButtons {
+        flex-direction: column;
+    }
+}
+
+nav a {
+    font-size: 2rem;
+    color: white;
     text-decoration: none;
 }
 
-.contact-info a:hover {
-    text-decoration: underline;
+nav a:visited {
+    color: white;
 }
 
-.contact-info a:visited {
-    color: #9290C3;
-}
-
-/*Profile Section*/
-
-.personal {
+/* Personal Info */
+.personalInfoCard {
     display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
     flex-wrap: wrap;
-    margin-left: 10%;
-    justify-content: space-evenly;
+    width: 75%;
+    height: 500px;
+    background-color: rgb(241, 244, 244);
+    margin: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.personal img {
-    /* margin: auto; */
-    padding: 20px;
+.profileImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.personalInfoCard img {
+    /* margin: 4rem; */
+    height: 80%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font: 2rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.leetcodeStats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 500px;
+    background-color: rgb(241, 244, 244);
+    margin: 2rem;
+}
+.leetcodeStats h1 {
+    height: fit-content;
+    margin: 2rem;
+}
+.charts {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    padding: 1rem;
+}
+
+.charts div {
+    display: flex;
+    color: rgb(0, 0, 0);
     height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
-.personal img:hover {
-    scale: 1.1;
-}
-.personal p {
-    padding: 20px;
-    font-size: 40px;
-
+.easy {
+    background-color: rgb(17, 255, 0);
 }
 
-/*Education Section*/
-
-.education fieldset {
-    margin: auto 5%;
+.medium {
+    background-color: yellow;
 }
 
-.education legend {
-    font-size: 40px;
-}
-
-.education table {
-    margin: auto;
-    width: 80vw;
-}
-
-td {
-    border: 2px solid #2E236C;
-    height: 40px;
-    width: 100vw;
-    font-size: 20px;
-}
-
-/* Skills Section*/
-.skills fieldset {
-    margin: auto 5%;
-}
-
-.skills legend {
-    font-size: 40px;
-}
-
-.skills ul {
-    list-style: none;
-    font-size: 20px;
-    margin: auto 5%;
-    border: 2px solid #2E236C;
-    border-radius: 5px;
+.hard {
+    background-color: rgb(255, 62, 62);
 }
