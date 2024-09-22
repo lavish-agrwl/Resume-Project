@@ -1,9 +1,10 @@
 const API = "https://leetcode-stats-api.herokuapp.com/lavish_agrwl";
 
 document.addEventListener("DOMContentLoaded", () => {
-  let easy = document.querySelector(".easy");
-  let medium = document.querySelector(".medium");
-  let hard = document.querySelector(".hard");
+  const easy = document.querySelector(".easy");
+  const medium = document.querySelector(".medium");
+  const hard = document.querySelector(".hard");
+  const other = document.querySelector('.otherStats');
   async function getData() {
     let rawData = await fetch(API);
     return rawData.json();
@@ -23,6 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
       // console.log(mediumSolved);
       medium.style.background = `conic-gradient(orange 0deg ${mediumSolved}deg, yellow ${mediumSolved}deg 360deg)`;
       medium.innerText = `Medium - ${data.mediumSolved}/${data.totalMedium}`;
+      other.innerText = `Total Questions Solved - ${data.totalSolved}
+Rank - ${data.ranking}`
     })
     .catch((err) => {
       console.error(err);
